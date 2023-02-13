@@ -1,6 +1,7 @@
 package calculator
 
 import (
+	"github.com/mjmhtjain/calc_lib/extra"
 	"github.com/mjmhtjain/calc_lib/internal/operations"
 )
 
@@ -14,4 +15,8 @@ func Sub(a, b int) int {
 
 func Mul(a, b int) int {
 	return operations.Mul(a, b)
+}
+
+func Div(a, b int) int {
+	return extra.Div(a, b)
 }
